@@ -1,5 +1,10 @@
 # Alpaca Image Generator
 
+## How to run locally
+* Run `yarn` to install dependencies
+* Run `yarn run start` to spin up snowpack and TS compiler
+* Profit
+
 ## [Project Source](https://www.codementor.io/projects/web/alpaca-image-generator-website-ce2oc0eus8)
 
 ## Features
