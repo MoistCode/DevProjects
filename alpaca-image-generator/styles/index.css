@@ -1,0 +1,24 @@
+.alpaca-preview {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+select {
+    margin-bottom: 12px;
+}
+
+.main,
+.selection-group {
+    display: flex;
+    flex-direction: column;
+}
+

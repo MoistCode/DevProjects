@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./styles/index.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
@@ -14,7 +13,113 @@
 </head>
 
 <body>
-    This is the Alpaca Image Generator
+    <header>
+        <h1>Alpaca Generator</h1>
+    </header>
+    <main>
+        <div class="alpaca-preview">
+            <img src="" style="z-index: 1;" data-type="backgrounds">
+
+            <img src="" style="z-index: 2;" data-type="neck">
+            <img src="" style="z-index: 2;" data-type="ears">            
+
+            <img src="" style="z-index: 3;" data-type="hair">
+
+            <img src="./public/assets/images/nose.png" style="z-index: 4;" data-type="nose">
+            <img src="" style="z-index: 4;" data-type="leg">
+            <img src="" style="z-index: 4;" data-type="mouth">
+            <img src="" style="z-index: 4;" data-type="accessories">
+
+            <img src="" style="z-index: 5;" data-type="eyes">
+        </div>
+
+        <div class="selection-group">
+            <label class="uppercase" for="accessories">accessories</label>
+            <select name="accessories" id="accessories">
+                <option value="earings">earings</option>
+                <option value="flower">flower</option>
+                <option value="glasses">glasses</option>
+                <option value="headphone">headphone</option>
+            </select>
+    
+            <label class="uppercase" for="eyes">eyes</label>
+            <select name="eyes" id="eyes">
+                <option value="angry">angry</option>
+                <option value="default">default</option>
+                <option value="naughty">naughty</option>
+                <option value="panda">panda</option>
+                <option value="smart">smart</option>
+                <option value="star">star</option>
+            </select>
+    
+            <label class="uppercase" for="backgrounds">backgrounds</label>
+            <select name="backgrounds" id="backgrounds">
+                <option value="blue50">blue50</option>
+                <option value="blue60">blue60</option>
+                <option value="blue70">blue70</option>
+                <option value="darkblue30">darkblue30</option>
+                <option value="darkblue50">darkblue50</option>
+                <option value="darkblue70">darkblue70</option>
+                <option value="green50">green50</option>
+                <option value="green60">green60</option>
+                <option value="green70">green70</option>
+                <option value="grey40">grey40</option>
+                <option value="grey70">grey70</option>
+                <option value="grey80">grey80</option>
+                <option value="red50">red50</option>
+                <option value="red60">red60</option>
+                <option value="red70">red70</option>
+                <option value="yellow50">yellow50</option>
+                <option value="yellow60">yellow60</option>
+                <option value="yellow70">yellow70</option>
+            </select>
+    
+            <label class="uppercase" for="hair">hair</label>
+            <select name="hair" id="hair">
+                <option value="bang">bang</option>
+                <option value="curls">curls</option>
+                <option value="default">default</option>
+                <option value="elegant">elegant</option>
+                <option value="fancy">fancy</option>
+                <option value="quiff">quiff</option>
+                <option value="short">short</option>
+            </select>
+    
+            <label class="uppercase" for="ears">ears</label>
+            <select name="ears" id="ears">
+                <option value="default">default</option>
+                <option value="tilt backward">tilt backward</option>
+                <option value="tilt forward">tilt forward</option>
+            </select>
+    
+            <label class="uppercase" for="leg">leg</label>
+            <select name="leg" id="leg">
+                <option value="bubble tea">bubble tea</option>
+                <option value="cookie">cookie</option>
+                <option value="default">default</option>
+                <option value="game console">game console</option>
+                <option value="tilt backward">tilt backward</option>
+                <option value="tilt forward">tilt forward</option>
+            </select>
+    
+            <label class="uppercase" for="mouth">mouth</label>
+            <select name="mouth" id="mouth">
+                <option value="astonished">astonished</option>
+                <option value="default">default</option>
+                <option value="eating">eating</option>
+                <option value="laugh">laugh</option>
+                <option value="tongue">tongue</option>
+            </select>
+    
+            <label class="uppercase" for="neck">neck</label>
+            <select name="neck" id="neck">
+                <option value="bend backward">bend backward</option>
+                <option value="bend forward">bend forward</option>
+                <option value="default">default</option>
+                <option value="thick">thick</option>
+            </select>
+        </div>
+    </main>
 </body>
 <script type="module" src="/dist/index.js"></script>
 
